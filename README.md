@@ -1,4 +1,3 @@
-
    NaviController is a tree based view controller container.
    
     Requires: ios target >= 5.0
@@ -12,9 +11,36 @@
       Say goodbye to custom init and Delegate callbacks.
  
     NaviController provide 3 types of ViewController's transition:
-    . PUSH : push a view controller(new or referrence) will add a node to current navigationTree. Push a view controller several times is allowed.
-    . JUMP : jump to a exsiting vc. Jump do not add node to navigation tree, it simply moves current node to jump target.
+
+    .PUSH : push a view controller(new or referrence) will add a node to current navigationTree. Push a view controller several times is allowed.
+```
+- (void)pushViewController:(UIViewController *)vc;
+
+- (void)pushViewController:(UIViewController *)vc animated:(BOOL)animated;
+
+- (void)pushViewController:(UIViewController*)vc intent:(NSDictionary*)intent;
+
+-(void)pushViewController:(UIViewController *)vc animated:(BOOL)animated intent:(NSDictionary *)intent;
+
+```
+
+    .JUMP : jump to a exsiting vc. Jump do not add node to navigation tree, it simply moves current node to jump target.
+```
+- (void)jumpToViewControllerIdentifiedBy:(id<NSCopying>)identifier animation:(ViewAnimation)animation intent:(NSDictionary*)intent;
+
+- (void)jumpToViewController:(UIViewController*)controller animation:(ViewAnimation)animation intent:(NSDictionary *)intent;
+```
     . POP  : pop to a target will cause navigation tree release subnode under target vc.
+```
+- (void)popViewControllerAnimated:(BOOL)animated;
+
+- (void)popViewControllerWithAnimation:(ViewAnimation)animation;
+
+- (void)popToViewController:(UIViewController*)controller animation:(ViewAnimation)animation;
+
+- (void)popToViewControllerIdentifiedBy:(id<NSCopying>)identifier animation:(ViewAnimation)animation;
+
+```
  
  
 - ViewController's identifier
