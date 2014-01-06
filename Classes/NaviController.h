@@ -125,10 +125,15 @@ typedef ViewAnimation ViewAnimationDirection;
 
 
 /**
-	Initiate method
+	Initiate method: init with a root view controller.
  */
 - (id) initWithRootViewController:(UIViewController*)rootVC identifiedBy:(id<NSCopying>)identifier;
 
+/**
+    Create View Controller that will be jumped to. This is a quick method to implement TabbarController like ViewController container.
+    Note: use jump instead of push to transit to next view controller.
+ */
+- (void)addNextViewControllers:(NSArray*)viewControllers;
 
 /**
 	Get ViewController of specified identifier

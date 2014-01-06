@@ -216,6 +216,15 @@
     return _currentNode.data;
 }
 
+-(void)addNextViewControllers:(NSArray *)viewControllers
+{
+    for (UIViewController *vc in viewControllers) {
+        NANode *node = [NANode nodeWithData:vc];
+        [_currentNode addChild:node];
+    }
+    
+}
+
 -(UIViewController *)viewControllerWithIdentifier:(id<NSCopying>)identifier
 {
     NANode *nextNode = [_navigationTree childNodeIdentifiedBy:identifier];
@@ -287,7 +296,6 @@
     id ident = identifier;
     if (ident==nil) {
         ident = [self setDefaultIdentiferForViewController:vc];
-//        NAVILOGI(@"identifier:%@",ident);
     }else{
         vc.identifier = identifier;
     }

@@ -25,6 +25,32 @@
     self.label.text = [NSString stringWithFormat:@"%d",[self getMyIndex]];
 }
 
+
+-(void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    
+    NSLog(@"view will appear");
+}
+
+-(void)viewDidAppear:(BOOL)animated
+{
+    [super viewDidAppear:animated];
+    NSLog(@"view did appear");
+}
+
+-(void)viewWillDisappear:(BOOL)animated
+{
+    [super viewWillDisappear:animated];
+    NSLog(@"view will disappear");
+}
+
+-(void)viewDidDisappear:(BOOL)animated
+{
+    [super viewDidDisappear:animated];
+    NSLog(@"view did disappear");
+}
+
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
@@ -40,8 +66,11 @@
 }
 - (IBAction)doPush:(id)sender {
     ViewController *vc = [ViewController new];
-    [self.naviController pushViewController:vc animation:ViewAnimationPush intent:@{@"index":@([self getMyIndex]+1)}];
-    
+    ViewController2 *vc2 = [ViewController2 new];
+
+    [self.naviController pushViewController:vc animation:ViewAnimationNone intent:@{@"index":@([self getMyIndex]+1)}];
+    [self.naviController pushViewController:vc animation:ViewAnimationPush intent:@{@"index":@([self getMyIndex]+2)}];
+
 }
 
 - (IBAction)doPush2:(id)sender {
