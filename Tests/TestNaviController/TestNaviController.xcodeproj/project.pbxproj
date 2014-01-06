@@ -13,7 +13,6 @@
 		C9A48151187A642B005CFA27 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C9A4814F187A642B005CFA27 /* InfoPlist.strings */; };
 		C9A48153187A642B005CFA27 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C9A48152187A642B005CFA27 /* main.m */; };
 		C9A48157187A642B005CFA27 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C9A48156187A642B005CFA27 /* AppDelegate.m */; };
-		C9A4815A187A642B005CFA27 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9A48158187A642B005CFA27 /* Main.storyboard */; };
 		C9A4815D187A642B005CFA27 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C9A4815C187A642B005CFA27 /* ViewController.m */; };
 		C9A4815F187A642B005CFA27 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C9A4815E187A642B005CFA27 /* Images.xcassets */; };
 		C9A48166187A642B005CFA27 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9A48165187A642B005CFA27 /* XCTest.framework */; };
@@ -21,6 +20,10 @@
 		C9A48168187A642B005CFA27 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9A4814A187A642B005CFA27 /* UIKit.framework */; };
 		C9A48170187A642B005CFA27 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C9A4816E187A642B005CFA27 /* InfoPlist.strings */; };
 		C9A48172187A642B005CFA27 /* TestNaviControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C9A48171187A642B005CFA27 /* TestNaviControllerTests.m */; };
+		C9A4817C187A66D4005CFA27 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C9A4817B187A66D4005CFA27 /* ViewController.xib */; };
+		C9A48180187A67CB005CFA27 /* NaviController.m in Sources */ = {isa = PBXBuildFile; fileRef = C9A4817F187A67CB005CFA27 /* NaviController.m */; };
+		C9A48184187A790C005CFA27 /* ViewController2.m in Sources */ = {isa = PBXBuildFile; fileRef = C9A48182187A790C005CFA27 /* ViewController2.m */; };
+		C9A48185187A790C005CFA27 /* ViewController2.xib in Resources */ = {isa = PBXBuildFile; fileRef = C9A48183187A790C005CFA27 /* ViewController2.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,7 +47,6 @@
 		C9A48154187A642B005CFA27 /* TestNaviController-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TestNaviController-Prefix.pch"; sourceTree = "<group>"; };
 		C9A48155187A642B005CFA27 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		C9A48156187A642B005CFA27 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		C9A48159187A642B005CFA27 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C9A4815B187A642B005CFA27 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		C9A4815C187A642B005CFA27 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		C9A4815E187A642B005CFA27 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
@@ -53,6 +55,12 @@
 		C9A4816D187A642B005CFA27 /* TestNaviControllerTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TestNaviControllerTests-Info.plist"; sourceTree = "<group>"; };
 		C9A4816F187A642B005CFA27 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		C9A48171187A642B005CFA27 /* TestNaviControllerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestNaviControllerTests.m; sourceTree = "<group>"; };
+		C9A4817B187A66D4005CFA27 /* ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewController.xib; sourceTree = "<group>"; };
+		C9A4817E187A67CB005CFA27 /* NaviController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NaviController.h; sourceTree = "<group>"; };
+		C9A4817F187A67CB005CFA27 /* NaviController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NaviController.m; sourceTree = "<group>"; };
+		C9A48181187A790C005CFA27 /* ViewController2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController2.h; sourceTree = "<group>"; };
+		C9A48182187A790C005CFA27 /* ViewController2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController2.m; sourceTree = "<group>"; };
+		C9A48183187A790C005CFA27 /* ViewController2.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewController2.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,9 +122,8 @@
 			children = (
 				C9A48155187A642B005CFA27 /* AppDelegate.h */,
 				C9A48156187A642B005CFA27 /* AppDelegate.m */,
-				C9A48158187A642B005CFA27 /* Main.storyboard */,
-				C9A4815B187A642B005CFA27 /* ViewController.h */,
-				C9A4815C187A642B005CFA27 /* ViewController.m */,
+				C9A48186187A7913005CFA27 /* Source */,
+				C9A4817D187A67CB005CFA27 /* Classes */,
 				C9A4815E187A642B005CFA27 /* Images.xcassets */,
 				C9A4814D187A642B005CFA27 /* Supporting Files */,
 			);
@@ -150,6 +157,29 @@
 				C9A4816E187A642B005CFA27 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C9A4817D187A67CB005CFA27 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				C9A4817E187A67CB005CFA27 /* NaviController.h */,
+				C9A4817F187A67CB005CFA27 /* NaviController.m */,
+			);
+			name = Classes;
+			path = ../../../Classes;
+			sourceTree = "<group>";
+		};
+		C9A48186187A7913005CFA27 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				C9A4815B187A642B005CFA27 /* ViewController.h */,
+				C9A4815C187A642B005CFA27 /* ViewController.m */,
+				C9A4817B187A66D4005CFA27 /* ViewController.xib */,
+				C9A48181187A790C005CFA27 /* ViewController2.h */,
+				C9A48182187A790C005CFA27 /* ViewController2.m */,
+				C9A48183187A790C005CFA27 /* ViewController2.xib */,
+			);
+			name = Source;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -229,8 +259,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				C9A4815F187A642B005CFA27 /* Images.xcassets in Resources */,
+				C9A48185187A790C005CFA27 /* ViewController2.xib in Resources */,
+				C9A4817C187A66D4005CFA27 /* ViewController.xib in Resources */,
 				C9A48151187A642B005CFA27 /* InfoPlist.strings in Resources */,
-				C9A4815A187A642B005CFA27 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -250,6 +281,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				C9A4815D187A642B005CFA27 /* ViewController.m in Sources */,
+				C9A48180187A67CB005CFA27 /* NaviController.m in Sources */,
+				C9A48184187A790C005CFA27 /* ViewController2.m in Sources */,
 				C9A48157187A642B005CFA27 /* AppDelegate.m in Sources */,
 				C9A48153187A642B005CFA27 /* main.m in Sources */,
 			);
@@ -280,14 +313,6 @@
 				C9A48150187A642B005CFA27 /* en */,
 			);
 			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		C9A48158187A642B005CFA27 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				C9A48159187A642B005CFA27 /* Base */,
-			);
-			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 		C9A4816E187A642B005CFA27 /* InfoPlist.strings */ = {

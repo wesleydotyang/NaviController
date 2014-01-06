@@ -141,7 +141,7 @@
             rootVC.identifier = identifier;
         }
         
-        _navigationTree = [[NANode nodeWithData:rootVC] retain];
+        _navigationTree = AH_RETAIN([NANode nodeWithData:rootVC]);
         _navigationTree.data = rootVC;
         
         _currentNode = _navigationTree;
@@ -237,7 +237,7 @@
     
     UIViewController *ctr = [self viewControllerWithIdentifier:ident];
     if (ctr == nil) {
-        ctr = [[cls new] autorelease];
+        ctr = AH_AUTORELEASE([cls new]);
         ctr.identifier = ident;
         [self pushViewController:ctr animation:animation intent:intent];
     }else{

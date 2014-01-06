@@ -6,15 +6,15 @@
 //  Copyright (c) 2014 Ma. All rights reserved.
 //
 
-#import "ViewController.h"
 #import "ViewController2.h"
+#import "ViewController.h"
 
-@interface ViewController ()
+@interface ViewController2 ()
 @property (weak, nonatomic) IBOutlet UILabel *label;
 
 @end
 
-@implementation ViewController
+@implementation ViewController2
 
 - (void)viewDidLoad
 {
@@ -57,6 +57,7 @@
 -(void)dealloc
 {
     NSLog(@"dealloc %@",NSStringFromClass([self class]));
+
 }
 
 @end
